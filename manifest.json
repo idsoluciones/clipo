@@ -1,6 +1,6 @@
 {
-  "name": "CLIPO App",
-  "short_name": "CLIPO App",
+  "name": "SECSAApp",
+  "short_name": "SECSAApp",
   "description": "Bienvenid@s a ",
   "background_color": "#FFFBFB",
   "theme_color": "#0ddb40",
@@ -11,9 +11,9 @@
   "lang": "es-MX",
   "icons": [
     {
-      "src": "./img/icon_1024.png",
+      "src": "./img/mision.jpg",
       "sizes": "1024x1024",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
       "src": "./img/icon_512.png",
