@@ -38,6 +38,30 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+	
+	//Funcion detectar sistema operativo
+ showMap=function(q)
+ {
+ var device = navigator.userAgent;
+ var url = 'http://maps.google.com?daddr='+q;
+ if (device.match(/Iphone/i) || device.match(/iPhone|iPad|iPod/i))
+ {
+ // iOs
+ url='http://maps.apple.com/maps?saddr=Current%20Location&daddr='+q;
+ }
+ else if(device.match(/Android/i))
+ {
+ // Android
+ url='geo:0,0?q='+q;
+ }
+ else if(device.match(/Windows Phone/i))
+ {
+ // windows phone
+ url='maps:'+q;
+ }
+
+ window.location.href = url;
+ }
 <body>
 	  <body background="./img/fondo.jpg">
   <header class="Header">
@@ -48,6 +72,7 @@ s0.parentNode.insertBefore(s1,s0);
      <img src="./img/banner_entrada2.jpg" >
     <a href="./directorio/index.html" style='width:100%; height:35px'  class="visor_imagenes">DIRECTORIO TELEFONICO</a>
    <a href="./institucional/index.html" style='width:100%; height:35px'  class="visor_imagenes">INSTITUCIONAL</a>
+	  <a href="#" onclick="showMap('Universidad+de+Deusto+Bilbao')">Mostrar mapa</a>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.3854082561115!2d-75.5989976!3d6.1614411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683ca19ec1dc5%3A0xe25fd151c240f187!2sCl%C3%ADnica%20de%20la%20Polic%C3%ADa!5e0!3m2!1ses-419!2sco!4v1570508738085!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	  <div>
  
